@@ -6,20 +6,20 @@
 			#map {
 				width:500px;
 				height: 400px;
+        border: 2px solid black;
 			}
+      #map2 {
+        width: 500px;
+        height: 400px;
+        border: 2px solid black;
+      }
  		</style>
  	</head>
 	<body>
         	<p id='map'></p>
-  	        <script type="text/javascript" charset="utf-8">
-            function initMap(){
-                var mapDiv = document.getElementById("map");
-				var map = new google.maps.Map(mapDiv, {
-					center: {lat: 40.283743650362996, lng: -3.8191530513763428},
-					zoom: 15
-				});
- 			}
- 		</script>
+          <p id='map2'></p>
+          <script type="text/javascript" src="modernizr-custom.js"></script>
+  	      <script type="text/javascript" src="map.js"></script>
 		<script src = "https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 	</body>
 </html>
